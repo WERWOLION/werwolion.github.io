@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6a6969;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_1" data-name="Эллипс 1" class="cls-1" d="M80,1.013c44.179,0,79.993,35.367,79.993,79S124.178,159,80,159,0.006,123.636.006,80.008,35.82,1.013,80,1.013Z"/>
+  <image id="S" x="20" y="4" width="115" height="151" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAPCAYAAADQ4S5JAAAB6UlEQVQokWNkYGBgYGZhEGBgYEhs6XPLi0jQE+biZmWAge/f//z99P7HHnEpnlJx5vYHTFDxPTVtTn1J2cYKLCxMbC+ffYkTZ27nmz/t7Mr///4LiEvxhPz9++/yy7+VgozMLAwGDAwM5y8+ymMQFecGaxZnbneF2dA70/N/TIoBjOvE9PcPwwUGBoZOqGIQEIQxmFkYlK5efAVmQ+nzjDDJl38r7zIwMChBuZ1S7O2zGBgYVjEwMBjDnP33D4MrzA8gMAuJXb7vbMqN+DRjmGIQWA0i4DYwszAInn+Qe0pckkcFSSPYKVO6j69Yt/xaJFwDMwvY2t0g93dN9WQIitRmQA5aKEgXZ26fBQulfcieVdcSe9Az3eOcsYV0EJomJ5AfEkGKre0VGBIzTb4wMDBUXLv0StHLelEwAwOD8r+//0GhCAMJIOdstHNW+H//U8n/l38r/6O7IyRaOwAkDsKPvpbuAtnwwT9ME+7ml38rkUOGYf3Kq+qwuPj18y8nSMOGjauuI6uZCUoCsMAIDNeu0tYXA0v8Z2BYDgultLxy65l55ZZgm759/f3u7Mmnr379+qthaSsHFnv57MtCPdnJCcjxoMDAwBDYO9PbjIeXTVNdU+Q9SJyTi/WMrAL/UnHm9gsMDAwMAOfcp2tBMOAsAAAAAElFTkSuQmCC"/>
+</svg>
