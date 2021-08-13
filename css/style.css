@@ -1,0 +1,385 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+html{
+   font-size: 15px;
+}
+
+body {
+   margin: 0;
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1rem;
+   line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5,h6{margin: 0;}
+
+p {
+   margin: 0 0 10px 0;
+}
+
+.conteiner {
+   padding: 0 1rem ;
+   width: 100%;
+   max-width: 1030px;
+   margin: 0 auto; /* отцентровка блока */
+}
+
+
+/*page
+================================*/
+
+.page{
+   overflow: hidden; /* то что вылазит скрывается !!!!мобилы!!!*/
+   min-height: 770px;/* минималка для мобил - Элементы не будут наползать!!! */
+
+   width: 100%;
+   height: 100vh; /*вью порт - зона видимости */
+   background: url("../img/bg.jpg") center no-repeat; /* картинка по центру - без повторов*/
+   background-size: cover; /*ковер = картинка занимает всё пространство нашего блока = картинка адаптивная  */
+   position: relative; /*position: relative
+Относительное позиционирование сдвигает элемент относительно его обычного положения.
+Для того, чтобы применить относительное позиционирование, необходимо указать элементу CSS-свойство position: relative и координаты left/right/top/bottom.*/
+
+}
+
+
+/* header
+================================*/
+.header {
+   background: #2B7DED ;
+   color: #fff;
+   padding: 1rem 0;
+   margin-bottom: 108px;
+}
+
+.header-fathe {
+   display: flex; /* разбиваем категорю на блоки */
+   justify-content: space-between ; /* разделяет элименты по краям и центру = Определяет, как элементы flexbox / grid выравниваются в соответствии с главной осью внутри контейнера */
+   align-items: center; /* выравниваем по вертикали все элементы контейнера (головы)  */
+}
+
+.header-brend {
+   font-size: 1.6rem;
+   color: #fff;
+   text-transform: uppercase; /* все буквы капсом */
+   font-weight: 700; /* Тольщина шрифта */
+}
+
+.header-logo img {     /* нужно обезательно указать что меняяем дисплей для картинки иначе не будет выравнивать */
+   display: block;
+}
+
+.header-nav {
+   display: flex; /* разбиваем категорю на блоки */
+}
+
+
+.header-nav-link {
+   margin: 0 1.6rem;
+
+   color: #fff;
+   font-weight: 500; /* Тольщина шрифта */
+   font-size: 1rem;
+   text-decoration: none; /* убираем анимацию по умолчанию для ссылок */
+
+   transition: color .2s linear; /* плавный переход */
+}
+
+.header-nav-link:hover{
+   color: rgba(159, 234, 248, 0.88);
+
+}
+
+
+.header-nav-link.active {
+   position: relative; /*Элемент остается в обычном потоке документа, но его можно сдвигать используя свойства top, right, bottom, left относительно его позиции в документе, а так же задавать позицию по оси Z используя z-index*/
+}
+
+.header-nav-link.active:after {  /* появится полоска ниже текста */
+    content: ""; /* сама полоска */
+    width: 100%;
+    height: 2px; /* высота блока - декор линия*/
+
+    background-color: #fff; /*цвет блока */
+
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+    left: 0;
+    bottom: -5px;
+
+}
+
+/*.content
+===================*/
+.content {
+   max-width: 563px;
+  /*   max-height: 290px;*/
+   width: 100%;   /* убрали макс высоту при адаптации мобил , добавили по высоте и ширине 100% */
+   height: 100%;
+
+}
+
+.sub-title {
+   opacity: 60%;
+   color: #fff;
+   font-size: 1.4rem; /*21*/
+   font-weight: lighter; /*300*/
+
+}
+.title {
+   color: #fff;
+   font-size: 2rem; /*30*/
+   font-weight: normal; /*500*/
+   line-height: 1.2;
+   margin-bottom: 35px;
+}
+.title.contacts {
+   margin-bottom: 7px;
+}
+
+.text {
+   color: #fff;
+   font-size: 1rem;
+   margin-bottom: 50px;
+}
+.title span{
+   color: #2B7DED;
+}
+
+/*.button1
+===================*/
+.button1,
+.button-cont {
+   display: inline-block; /*display: inline-block позволяет задавать ширину и высоту элемента.
+   display: inline-block не добавляет разрыв строки после элемента, поэтому элемент может сидеть рядом с другими элементами.*/
+   padding: 12px 36px;
+/*
+   width: 160px;
+   height: 40px;
+*/
+   background: #2b7ded;
+   color: #fff;
+   line-height:  1.1;
+   font-size: 1rem;
+   text-decoration: none; /* убираем анимацию по умолчанию для ссылок */
+   font-weight: 500;  /* 500= медиум  */
+   border-radius: 5px;
+
+   cursor: pointer;  /* курсор рука для нажатия */
+
+   transition: background-color .2s linear;  /* плавный переход - даём родителю*/
+}
+.button1:hover,
+.button-cont:hover{
+   background-color: #2168c8;
+}
+.button-cont{
+   display: block;
+   font-family: inherit; /* шрифт родителя */
+   width: 100%;
+   text-align:center; /* текст по центру */
+}
+
+
+/*.foto
+=====================*/
+.foto {
+   position: absolute;
+   bottom: 0;
+   right: 20px;
+   max-height:650px;
+}
+
+
+/*.footer
+====================================*/
+.footer {
+   width: 100%; /* без этого футер не позиционируется и убегает из контейнера*/
+   position: absolute; /* позиционирует относительно всей страницы для ширины нужно указать 100% */
+   bottom: 44px;
+   left: 0;
+}
+
+
+/*contact
+==================================*/
+.contact {
+   display: flex;
+   align-items: center; /* выравнивание центра по вертикали */
+}
+
+.contactlink {
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 500;  /* 500= медиум  */
+   text-decoration: none;
+
+   margin: 0 2rem 0 0;
+}
+
+.contactlink:last-child {
+   margin: 0 0 0 0;
+   position: relative; /* добовляем полоску */
+
+}
+.contactlink:last-child:after {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 80px;
+
+   background: #fff;
+
+   margin-left: 2rem;
+   pointer-events: none; /* уберает поведение родителя ссылки */
+   /*позволяет управлять тем, как элементы будут реагировать на события мыши или прикосновения к сенсорному экрану.*/
+
+   position: absolute;
+   left: 100%;
+   top: 11px;
+
+}
+
+
+.contactlink:hover{
+   text-decoration: underline;
+}
+
+
+.contactlink img {
+   margin-right: 5px;
+}
+
+/*.form
+============================*/
+.form {
+   width: 100%;
+   max-width:280px;
+}
+
+.input,             /* задаём для 2х классов */
+.textarea {
+   display: block;
+
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0.1);
+
+   font-family: inherit; /* 'Montserrat', sans-serif;  У инпутов по умолчанию свой шрифт / насл родителя */
+   color: #fff; /* цвет текста который будет набиратся в плейсхолдер - поле формы*/
+   font-size: 1rem;
+   font-weight: 500;  /* 500= медиум  */
+
+   margin-bottom: 1.4rem;
+   padding: 12px 18px;
+
+   border-radius: 5px;
+   border: 0;
+}
+.textarea {
+   height: 100px;
+   resize: none; /* РЕСАЙЗ треуголник расширения поля */
+}
+
+/* Меняем цвет шрифта у подсказки - плейсхолдера - полей ввода*/
+.input::placeholder {   /* Меняем цвет шрифта у подсказки - плейсхолдера - полей ввода - два двоеточия*/
+   color: #fff;
+}
+/* ==========================================*/
+.textarea::placeholder {   /* Меняем цвет шрифта у подсказки - плейсхолдера - полей ввода - два двоеточия*/
+   color: #fff;
+
+}
+
+
+/*  Media
+================================= правим под мобилки*/
+
+@media (max-width:738px ) {  /*  Media айпэд */
+
+   .header{
+      margin-bottom: 30px;
+   }
+   .header-logo {      /* отключаем векторную картинку - лого  */
+      display: none;
+   }
+   .header-brend{/* уменьшаем размер заголовка в шапке */
+      font-size: 1.2rem ;
+   }
+   .content{
+      margin-bottom: 40px;
+      max-width: none; /* убираем макс ширину блока */
+      text-align: center;
+   }
+   .page{
+     min-height: 100vh;  /* для мобилы минимальное значение во всесь экран - автоматическое не даёт быть больше */
+     height: auto; /* автовысота для мобилок - поворот экрана */
+
+   }
+
+   .form{
+      margin: 0 auto; /* форму ровняем по центру */
+
+   }
+
+   .footer {
+      position: static; /* размещение кантактов в потоке блоков */
+   }
+
+
+}  /*  Media айпэд */
+
+@media (max-width:520px ) {   /*max-width:520px */
+   .contactlink:last-child:after {
+      display: none;
+   }
+   .header-fathe {
+      flex-direction: column;  /* переносим ссылки заголовка в др строку / флекс айтомы друд под другом */
+   }
+   .header-brend {
+      margin-bottom: 10px;
+   }
+   .contact{
+      flex-direction: column;  /* переносим ссылки заголовка в др строку / флекс айтомы друд под другом */
+   }
+   .contactlink{
+      margin: 0 0 0.5rem 0;
+   }
+   .contactlink:last-child{
+      margin-bottom: 0;
+   }
+   .content{
+      text-align: center;
+   }
+
+
+}/*@media (max-width:520px )*/
+
+
+@media (max-width:1000px ) {
+      .foto{
+      right: -140px
+   }
+
+}
+@media (max-width:760px ) {
+      .foto{
+      display: none;
+   }
+
+}
+
+@media (max-width:320px ) {
+   .sub-title{
+   font-size: 1.1rem ;
+   }
+
+   .title{/* уменьшаем размер заголовка  */
+      font-size: 1.4rem ;
+   }
+
+
+}
+
